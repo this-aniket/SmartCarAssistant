@@ -1,0 +1,245 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/appListTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:fontFamily="@font/adventure"
+        android:text="Let me Assist You..."
+        android:textColor="#000000"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/textView2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonNotification"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_alarm" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonNotification"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Manage\n Notifications"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonMonthlyExpenses"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:scaleX="0.8"
+                android:scaleY="0.89"
+                app:srcCompat="@drawable/ic_money_bag"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonMonthlyExpenses"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Monthly Expense"
+                android:id="@+id/textView2">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonMoodyMusicPlayer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:scaleY="0.9"
+                android:scaleX="0.9"
+                app:srcCompat="@drawable/ic_music_player_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonMoodyMusicPlayer"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Moody Music \n Player">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.smartcarassistant.AppListActivity"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonHelpDesk"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_help"
+                android:layout_marginBottom="1dp"
+                android:scaleY="0.9"
+                android:scaleX="0.9"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonHelpDesk"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="HelpDesk">
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonExploreAroundme"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                app:srcCompat="@drawable/ic_explorer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonExploreAroundme"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Explore Around \n ME"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttonEmergencyTrapped"
+                android:layout_width="100dp"
+                android:layout_marginLeft="5dp"
+                android:scaleY="0.9"
+                android:scaleX="0.9"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/ic_siren"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonEmergencyTrapped"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="Emergency Call \n And SMS \n(on One Tap)"
+                android:gravity="center">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        tools:context="com.smartcarassistant.AppListActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/buttondetect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="1dp"
+                app:srcCompat="@drawable/ic_search" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttondetect"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="FindMeNow!"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/buttontravelpat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="1dp"
+                app:srcCompat="@drawable/ic_destination" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttontravelpat"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:text="TravellingPattern!"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="134dp"
+        android:text="Logout"
+        android:fontFamily="@font/happy_monkey"
+        android:id="@+id/buttonLogout"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smartcarassistant.DetectActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Me Now! "
+        android:id="@+id/findMeNpwTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOff"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:text="ON"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textView3" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOn"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/svg_detecton"
+        android:layout_marginBottom="79dp"
+        android:layout_above="@+id/buttonOff"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOff"
+        android:src="@drawable/svg_detectoff"
+        android:background="@drawable/circle_background"
+        android:layout_above="@+id/buttonDisconnect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonDisconnect"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="47dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="OFF"
+        android:textColor="#000000"
+        android:id="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/svg_detectdisconnect" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonDisconnect"
+        android:layout_below="@+id/textView4"
+        android:gravity="right"
+        android:layout_marginEnd="20dp"
+        android:text="Disconnect"
+        android:textColor="#000000" />
+
+</RelativeLayout>

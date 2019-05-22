@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SmartCarAssistant</string>
+    <string-array name="Features">
+        <item>PUC</item>
+        <item>Car Servicing</item>
+        <item>Petrol</item>
+        <item>Tyre</item>
+    </string-array>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_explore_aroundme">Map</string>
+    <string name="title_activity_view_place">ViewPlace</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_led_control">ledControl</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+
+
+        <string name="pause">||</string>
+        <string name="prev">|&lt;&lt;</string>
+        <string name="next">&gt;&gt;|</string>
+        <string name="forward">&gt;&gt;</string>
+        <string name="back">&lt;&lt;</string>
+
+
+</resources>
